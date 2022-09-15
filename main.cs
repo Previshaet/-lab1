@@ -150,7 +150,7 @@ namespace ConsoleApplication4
         public double LengthSide(Point A, Point B) //находит длинну стороны
             => Math.Sqrt( Math.Pow(A.X - B.X, 2) + Math.Pow(A.Y - B.X, 2) );
 
-        public double PerimeterCalculator()
+        public double PerimeterCalculator() //считает сумму сторон фигуры
         {
             double rez = 0;
             for (int i = 1; i < _points.Length; ++i)
@@ -161,12 +161,12 @@ namespace ConsoleApplication4
             return rez;
         }
 
-        public void print()
+        public void print() //выводит имя фигуры и его периметр
         {
             Console.WriteLine($"[{Name}] Perimeter is {PerimeterCalculator()}");
         }
 
-        public void print_points()
+        public void print_points() //выводит имя фигруры и список её точек
         {
             Console.WriteLine(Name);
             int i = 0;
