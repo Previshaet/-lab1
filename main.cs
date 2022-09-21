@@ -129,8 +129,6 @@ namespace ConsoleApplication4
         Point[] _points; //массив точек
         public string Name { get; set; } //автосвойство имени фигуры
 
-        //public Point[] Pts { get => _pts; set => _pts = value; }
-
         public Figure(string str, Point A, Point B, Point C) //конструкт с 3 точками
         {
             _points = new Point[3] { A, B, C };
